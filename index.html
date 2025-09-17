@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac To Chizu Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="image/logo.png" class="logo" width="150px" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbox">
+          <h2>Macaroni To<span>Chizu</span></h2>
+          <p>
+            Mac To Chizu merupakan makanan yang dibuat dengan cara menggabungkan
+            dua kondimen antara macaroni dan keju dengan cita rasa gurih yang
+            bersatu dengan rasa creamy yang membuat sensasi nikmat saat
+            memakannya
+          </p>
+          <a href="#">Pre Order</a>
+        </div>
+        <div class="imgBox">
+          <img src="image/img1.png" class="Mac" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <a href="#"
+            ><img
+              src="image/thumb1.png"
+              width="170px"
+              onclick="imgSlider('image/img1.png');changeCircleColor('#e5bb00')"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="image/thumb2.png"
+              width="170px"
+              onclick="imgSlider('image/img2.png');changeCircleColor('#eb5408')"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="image/thumb3.png"
+              width="170px"
+              onclick="imgSlider('image/img3.png');changeCircleColor('#e6d281')"
+          /></a>
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="https://instagram.com/rezzarse_?igshid=MzRlODBiNWFlZA=="
+            ><img src="image/instagram.png"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="image/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="image/twitter.png" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".Mac").src = anything;
+      }
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>
